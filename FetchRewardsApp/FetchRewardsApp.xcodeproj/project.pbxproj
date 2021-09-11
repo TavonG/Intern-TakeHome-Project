@@ -9,22 +9,34 @@
 /* Begin PBXBuildFile section */
 		D5B2FBEE26EBC29800A9F2AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2FBED26EBC29800A9F2AD /* AppDelegate.swift */; };
 		D5B2FBF026EBC29800A9F2AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2FBEF26EBC29800A9F2AD /* SceneDelegate.swift */; };
-		D5B2FBF226EBC29800A9F2AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2FBF126EBC29800A9F2AD /* ViewController.swift */; };
 		D5B2FBF526EBC29800A9F2AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5B2FBF326EBC29800A9F2AD /* Main.storyboard */; };
 		D5B2FBF726EBC29C00A9F2AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5B2FBF626EBC29C00A9F2AD /* Assets.xcassets */; };
 		D5B2FBFA26EBC29C00A9F2AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5B2FBF826EBC29C00A9F2AD /* LaunchScreen.storyboard */; };
+		D5B2FC0926EC415200A9F2AD /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2FC0826EC415200A9F2AD /* CategoryTableViewController.swift */; };
+		D5B2FC0B26EC416900A9F2AD /* MealsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2FC0A26EC416900A9F2AD /* MealsTableViewController.swift */; };
+		D5B2FC0D26EC418300A9F2AD /* MealsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2FC0C26EC418300A9F2AD /* MealsDetailViewController.swift */; };
+		D5B2FC0F26EC43A500A9F2AD /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2FC0E26EC43A500A9F2AD /* Category.swift */; };
+		D5B2FC1126EC43B700A9F2AD /* Meals.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2FC1026EC43B700A9F2AD /* Meals.swift */; };
+		D5B2FC1326EC440D00A9F2AD /* MealsbyID.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2FC1226EC440D00A9F2AD /* MealsbyID.swift */; };
+		D5B2FC1526EC46D200A9F2AD /* CategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2FC1426EC46D200A9F2AD /* CategoryController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D5B2FBEA26EBC29800A9F2AD /* FetchRewardsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchRewardsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B2FBED26EBC29800A9F2AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5B2FBEF26EBC29800A9F2AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D5B2FBF126EBC29800A9F2AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D5B2FBF426EBC29800A9F2AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D5B2FBF626EBC29C00A9F2AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5B2FBF926EBC29C00A9F2AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5B2FBFB26EBC29C00A9F2AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5B2FC0126EBC32B00A9F2AD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D5B2FC0826EC415200A9F2AD /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		D5B2FC0A26EC416900A9F2AD /* MealsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsTableViewController.swift; sourceTree = "<group>"; };
+		D5B2FC0C26EC418300A9F2AD /* MealsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsDetailViewController.swift; sourceTree = "<group>"; };
+		D5B2FC0E26EC43A500A9F2AD /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		D5B2FC1026EC43B700A9F2AD /* Meals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meals.swift; sourceTree = "<group>"; };
+		D5B2FC1226EC440D00A9F2AD /* MealsbyID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsbyID.swift; sourceTree = "<group>"; };
+		D5B2FC1426EC46D200A9F2AD /* CategoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,15 +70,69 @@
 		D5B2FBEC26EBC29800A9F2AD /* FetchRewardsApp */ = {
 			isa = PBXGroup;
 			children = (
-				D5B2FBED26EBC29800A9F2AD /* AppDelegate.swift */,
-				D5B2FBEF26EBC29800A9F2AD /* SceneDelegate.swift */,
-				D5B2FBF126EBC29800A9F2AD /* ViewController.swift */,
-				D5B2FBF326EBC29800A9F2AD /* Main.storyboard */,
+				D5B2FC0226EC405400A9F2AD /* Views */,
+				D5B2FC0326EC406400A9F2AD /* Application */,
+				D5B2FC0626EC40DC00A9F2AD /* Models */,
+				D5B2FC0426EC407000A9F2AD /* View Controllers */,
+				D5B2FC0526EC40CF00A9F2AD /* Storyboards */,
+				D5B2FC0726EC40E300A9F2AD /* Model Controllers */,
 				D5B2FBF626EBC29C00A9F2AD /* Assets.xcassets */,
 				D5B2FBF826EBC29C00A9F2AD /* LaunchScreen.storyboard */,
 				D5B2FBFB26EBC29C00A9F2AD /* Info.plist */,
 			);
 			path = FetchRewardsApp;
+			sourceTree = "<group>";
+		};
+		D5B2FC0226EC405400A9F2AD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D5B2FC0326EC406400A9F2AD /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D5B2FBED26EBC29800A9F2AD /* AppDelegate.swift */,
+				D5B2FBEF26EBC29800A9F2AD /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D5B2FC0426EC407000A9F2AD /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D5B2FC0826EC415200A9F2AD /* CategoryTableViewController.swift */,
+				D5B2FC0A26EC416900A9F2AD /* MealsTableViewController.swift */,
+				D5B2FC0C26EC418300A9F2AD /* MealsDetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D5B2FC0526EC40CF00A9F2AD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D5B2FBF326EBC29800A9F2AD /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D5B2FC0626EC40DC00A9F2AD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D5B2FC0E26EC43A500A9F2AD /* Category.swift */,
+				D5B2FC1026EC43B700A9F2AD /* Meals.swift */,
+				D5B2FC1226EC440D00A9F2AD /* MealsbyID.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D5B2FC0726EC40E300A9F2AD /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D5B2FC1426EC46D200A9F2AD /* CategoryController.swift */,
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,9 +205,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5B2FBF226EBC29800A9F2AD /* ViewController.swift in Sources */,
 				D5B2FBEE26EBC29800A9F2AD /* AppDelegate.swift in Sources */,
+				D5B2FC1326EC440D00A9F2AD /* MealsbyID.swift in Sources */,
 				D5B2FBF026EBC29800A9F2AD /* SceneDelegate.swift in Sources */,
+				D5B2FC0D26EC418300A9F2AD /* MealsDetailViewController.swift in Sources */,
+				D5B2FC0B26EC416900A9F2AD /* MealsTableViewController.swift in Sources */,
+				D5B2FC0926EC415200A9F2AD /* CategoryTableViewController.swift in Sources */,
+				D5B2FC1126EC43B700A9F2AD /* Meals.swift in Sources */,
+				D5B2FC0F26EC43A500A9F2AD /* Category.swift in Sources */,
+				D5B2FC1526EC46D200A9F2AD /* CategoryController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
