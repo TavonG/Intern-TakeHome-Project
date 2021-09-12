@@ -69,7 +69,7 @@ class CategoryTableViewController: UITableViewController {
         guard let indexPath = tableView.indexPath(for: cell) else { return}
         let meal = categoryController.category[indexPath.row]
         
-        mealsVC.
+        mealsVC.category = meal
         
         
      

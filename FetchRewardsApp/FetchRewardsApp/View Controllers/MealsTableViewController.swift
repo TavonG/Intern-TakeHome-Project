@@ -11,12 +11,13 @@ class MealsTableViewController: UITableViewController {
     
     let mealsController = MealsController()
     var meal: meals?
+    var category: category!
     
     var strMeal: [String] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        mealsController.searchForMealWith(searchTerm: "SeaFood") {
+        mealsController.searchForMealWith(searchTerm: category.strCategory) {
             DispatchQueue.main.sync {
                 self.tableView.reloadData()
             }

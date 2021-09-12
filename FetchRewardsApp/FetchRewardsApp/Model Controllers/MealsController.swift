@@ -16,7 +16,7 @@ class MealsController {
     }
     
     private var baseURL = URL(string: "https://www.themealdb.com")!
-    private lazy var mealURL = URL(string: "/api/json/v1/1/lookup.php?c=", relativeTo: baseURL)!
+    private lazy var mealURL = URL(string: "/api/json/v1/1/filter.php", relativeTo: baseURL)!
     
     var meals: [meals] = []
     
@@ -25,7 +25,7 @@ class MealsController {
         print("search term:", searchTerm)
         
         var urlComponents = URLComponents(url: mealURL, resolvingAgainstBaseURL: true)
-            let searchTermQueryItem = URLQueryItem(name: "search", value: searchTerm)
+            let searchTermQueryItem = URLQueryItem(name: "c", value: searchTerm)
         urlComponents?.queryItems = [searchTermQueryItem]
         
         guard let requestURL = urlComponents?.url else {
