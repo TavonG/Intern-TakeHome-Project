@@ -13,7 +13,7 @@ struct category: Codable {
     let strCategoryDescription: String
 }
 
-struct CategoryMeal: Decodable {
-    let results: [category]
-    let count: Int
+struct CategoryResponse: Decodable {
+    let categories: [category]
 }
+

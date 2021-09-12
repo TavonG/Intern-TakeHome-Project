@@ -10,4 +10,9 @@ import Foundation
 struct mealsbyid: Codable {
     let strMeal: String
     let idMeal: String
+    let strInstructions: String
+}
+
+struct MealResponse: Decodable {
+    let meals: [meals]
 }

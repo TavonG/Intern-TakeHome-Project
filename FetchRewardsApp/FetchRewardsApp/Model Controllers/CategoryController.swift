@@ -15,8 +15,8 @@ class CategoryController {
         case delete = "DELETE"
     }
     
-    private let baseURL = URL(string: "https://www.themealdb.com/api.php")!
-    private lazy var categoryURL = URL(string: "/api/json/v1/categories.php", relativeTo: baseURL)!
+    private let baseURL = URL(string: "https://www.themealdb.com")!
+    private lazy var categoryURL = URL(string: "/api/json/v1/1/categories.php", relativeTo: baseURL)!
     
     var category: [category] = []
     
@@ -52,9 +52,9 @@ class CategoryController {
             let jsonDecoder = JSONDecoder()
             
             do {
-                let categoryMeal = try jsonDecoder.decode(CategoryMeal.self, from: data)
-                self.category.append(contentsOf: categoryMeal.results)
-                print(categoryMeal.count)
+                let categoryMeal = try jsonDecoder.decode(CategoryResponse.self, from: data)
+                self.category.append(contentsOf: categoryMeal.categories)
+                print(categoryMeal.categories.count)
                 completion()
             } catch {
                 print("Unable to decode data into object of type CategoryMeal: \(error)")

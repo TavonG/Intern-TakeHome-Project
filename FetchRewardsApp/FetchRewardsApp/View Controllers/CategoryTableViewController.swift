@@ -10,7 +10,9 @@ import UIKit
 class CategoryTableViewController: UITableViewController {
     
     let categoryController = CategoryController()
-    var name: String?
+   // var name: String?
+    
+    var strCategory: [String] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,16 +62,22 @@ class CategoryTableViewController: UITableViewController {
     
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+//    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let mealsVC = segue.destination as? MealsTableViewController else { return}
         guard let cell = sender as? UITableViewCell else { return}
         guard let indexPath = tableView.indexPath(for: cell) else { return}
         let meal = categoryController.category[indexPath.row]
+        
+        mealsVC.
+        
+        
+     
     
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
     
+
 
 }
