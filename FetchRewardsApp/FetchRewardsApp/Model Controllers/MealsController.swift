@@ -18,7 +18,7 @@ class MealsController {
     private var baseURL = URL(string: "https://www.themealdb.com")!
     private lazy var mealURL = URL(string: "/api/json/v1/1/filter.php", relativeTo: baseURL)!
     
-    var meals: [meals] = []
+    var meals: [mealsbyid] = []
     
     func searchForMealWith(searchTerm: String, completion: @escaping () -> Void) {
 

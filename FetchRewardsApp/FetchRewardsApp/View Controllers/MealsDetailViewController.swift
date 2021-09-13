@@ -8,10 +8,20 @@
 import UIKit
 
 class MealsDetailViewController: UIViewController {
-
+    
+    var details: meals?
+    
+    
+    @IBOutlet var namelabel: UILabel!
+    @IBOutlet var instructionlabel: UILabel!
+    @IBOutlet var ingredientslabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print(details)
+        namelabel.text = details?.strMeal
+        instructionlabel.text = details?.strInstructions
+        ingredientslabel.text = details?.strIngredient1
         // Do any additional setup after loading the view.
     }
     
