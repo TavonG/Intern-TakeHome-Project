@@ -20,12 +20,12 @@ class MealsController {
     
     var meals: [mealsbyid] = []
     
-    func searchForMealWith(searchTerm: String, completion: @escaping () -> Void) {
+    func searchForMealsByCategory(_ category: category, completion: @escaping () -> Void) {
 
-        print("search term:", searchTerm)
+        print("search term:", category.strCategory)
         
         var urlComponents = URLComponents(url: mealURL, resolvingAgainstBaseURL: true)
-            let searchTermQueryItem = URLQueryItem(name: "c", value: searchTerm)
+        let searchTermQueryItem = URLQueryItem(name: "c", value: category.strCategory)
         urlComponents?.queryItems = [searchTermQueryItem]
         
         guard let requestURL = urlComponents?.url else {

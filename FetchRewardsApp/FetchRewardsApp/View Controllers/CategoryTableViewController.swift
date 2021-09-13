@@ -56,8 +56,6 @@ class CategoryTableViewController: UITableViewController {
 
         return cell
     }
-    
-
 
     
     // MARK: - Navigation

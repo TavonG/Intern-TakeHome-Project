@@ -10,14 +10,14 @@ import UIKit
 class MealsTableViewController: UITableViewController {
     
     let mealsController = MealsController()
-    var meal: meals?
+    var meal: Recipe?
     var category: category!
     
     var strMeal: [String] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        mealsController.searchForMealWith(searchTerm: category.strCategory) {
+        mealsController.searchForMealsByCategory(category) {
             DispatchQueue.main.sync {
                 self.tableView.reloadData()
             }
@@ -56,6 +56,10 @@ class MealsTableViewController: UITableViewController {
         return cell
     }
     
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        <#code#>
+//    }
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -65,7 +69,7 @@ class MealsTableViewController: UITableViewController {
         guard let indexPath = tableView.indexPath(for: cell) else { return}
         let details = mealsController.meals[indexPath.row]
         
-        detailVC.details = meal
+        detailVC.details = details
         
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.

@@ -9,31 +9,36 @@ import UIKit
 
 class MealsDetailViewController: UIViewController {
     
-    var details: meals?
+    let detailController = MealsdetailController()
+    var details: mealsbyid!
+    var recipe: Recipe?
     
     
-    @IBOutlet var namelabel: UILabel!
-    @IBOutlet var instructionlabel: UILabel!
-    @IBOutlet var ingredientslabel: UILabel!
+    @IBOutlet var label: UILabel!
+    @IBOutlet var mealName: UILabel!
+    @IBOutlet var instructions: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(details)
-        namelabel.text = details?.strMeal
-        instructionlabel.text = details?.strInstructions
-        ingredientslabel.text = details?.strIngredient1
-        // Do any additional setup after loading the view.
+        detailController.searchForRecipe(for: details) { recipe in
+            guard let recipe = recipe else { return }
+            self.label.text = self.details.strMeal
+            self.mealName.text = recipe.description
+            self.instructions.text = recipe.instructions
+            
+            // add a table view of all the ingredients
+        }
+        
+        
+        /*
+         // MARK: - Navigation
+         
+         // In a storyboard-based application, you will often want to do a little preparation before navigation
+         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         // Get the new view controller using segue.destination.
+         // Pass the selected object to the new view controller.
+         }
+         */
+        
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

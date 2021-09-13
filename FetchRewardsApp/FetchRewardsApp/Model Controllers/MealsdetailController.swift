@@ -17,15 +17,15 @@ class MealsdetailController {
     
     private var baseURL = URL(string: "https://www.themealdb.com")!
     private lazy var detailURL = URL(string: "/api/json/v1/1/lookup.php", relativeTo: baseURL)!
+
     
-    var details: [meals] = []
-    
-    func searchForMealsWith(searchTerm: String, completion: @escaping () -> Void) {
-        print("search term:", searchTerm)
+    func searchForRecipe(for meal: mealsbyid, completion: @escaping (Recipe?) -> Void) {
+        
+        print("search term:", meal.idMeal)
         
         
         var urlComponents = URLComponents(url: detailURL, resolvingAgainstBaseURL: true)
-            let searchTermQueryItem = URLQueryItem(name: "i", value: searchTerm)
+        let searchTermQueryItem = URLQueryItem(name: "i", value: meal.idMeal)
         urlComponents?.queryItems = [searchTermQueryItem]
         
         guard let requestURL = urlComponents?.url else {
@@ -52,9 +52,9 @@ class MealsdetailController {
             
             do {
                 let mealDetail = try jsonDecoder.decode(DetailResponse.self, from: data)
-                self.details.append(contentsOf: mealDetail.meal)
-                print(mealDetail.meal.count)
-                completion()
+                DispatchQueue.main.async {
+                    completion(mealDetail.meals.first)
+                }
             } catch {
                 print("Unable to decode data into object of mealDetail: \(error)")
                 print(String(data: data, encoding: .utf8))
