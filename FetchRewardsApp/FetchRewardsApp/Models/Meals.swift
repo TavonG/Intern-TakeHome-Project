@@ -8,7 +8,6 @@
 import Foundation
 
 struct meals: Codable {
-    let idMeal: String
     let strMeal: String
     let strInstructions: String
     let strIngredient1: String
@@ -32,6 +31,6 @@ struct meals: Codable {
 
 }
 
-//struct MealResponse: Decodable {
-//    let meals: [meals]
-//}
+struct DetailResponse: Decodable {
+    let meal: [meals]
+}

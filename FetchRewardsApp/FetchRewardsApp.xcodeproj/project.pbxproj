@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D57D560326EFB99000DEC501 /* MealsdetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57D560226EFB99000DEC501 /* MealsdetailController.swift */; };
 		D5B2FBEE26EBC29800A9F2AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2FBED26EBC29800A9F2AD /* AppDelegate.swift */; };
 		D5B2FBF026EBC29800A9F2AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2FBEF26EBC29800A9F2AD /* SceneDelegate.swift */; };
 		D5B2FBF526EBC29800A9F2AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5B2FBF326EBC29800A9F2AD /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D57D560226EFB99000DEC501 /* MealsdetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsdetailController.swift; sourceTree = "<group>"; };
 		D5B2FBEA26EBC29800A9F2AD /* FetchRewardsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchRewardsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B2FBED26EBC29800A9F2AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5B2FBEF26EBC29800A9F2AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			children = (
 				D5B2FC1426EC46D200A9F2AD /* CategoryController.swift */,
 				D5E49FB826ED34C00068A070 /* MealsController.swift */,
+				D57D560226EFB99000DEC501 /* MealsdetailController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				D5E49FB926ED34C00068A070 /* MealsController.swift in Sources */,
 				D5B2FBEE26EBC29800A9F2AD /* AppDelegate.swift in Sources */,
 				D5B2FC1326EC440D00A9F2AD /* MealsbyID.swift in Sources */,
+				D57D560326EFB99000DEC501 /* MealsdetailController.swift in Sources */,
 				D5B2FBF026EBC29800A9F2AD /* SceneDelegate.swift in Sources */,
 				D5B2FC0D26EC418300A9F2AD /* MealsDetailViewController.swift in Sources */,
 				D5B2FC0B26EC416900A9F2AD /* MealsTableViewController.swift in Sources */,
