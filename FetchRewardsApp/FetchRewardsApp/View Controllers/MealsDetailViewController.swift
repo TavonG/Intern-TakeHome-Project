@@ -23,8 +23,12 @@ class MealsDetailViewController: UIViewController {
         detailController.searchForRecipe(for: details) { recipe in
             guard let recipe = recipe else { return }
             self.label.text = self.details.strMeal
-            self.mealName.text = recipe.description
+            //self.mealName.text = recipe.description
             self.instructions.text = recipe.instructions
+            
+            for ingredient in recipe.ingredients {
+                self.instructions.text? += "\n\(ingredient.name) - \(ingredient.measurement)"
+            }
             
             // add a table view of all the ingredients
         }
