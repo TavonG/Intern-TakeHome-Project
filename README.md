@@ -25,5 +25,5 @@ This app will display meals in alphabetically order with meals sorted into their
   -  Meals
   -  Meals details
 
-![Simulator Screen Shot - iPhone 13 - 2022-10-05 at 14 14 30](https://user-images.githubusercontent.com/73010002/194144090-12d76733-6b17-42a3-8d30-a99d754e6768.png)
 
+<img width="308" alt="HomeView" src="https://user-images.githubusercontent.com/73010002/194144996-464c14e9-5930-4f7b-abdb-8eb7cfc1ff58.png">
