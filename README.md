@@ -26,4 +26,20 @@ This app will display meals in alphabetically order with meals sorted into their
   -  Meals details
 
 
+
+
+* Home View on xcode simulator
 <img width="308" alt="HomeView" src="https://user-images.githubusercontent.com/73010002/194144996-464c14e9-5930-4f7b-abdb-8eb7cfc1ff58.png">
+
+
+
+
+* Meals View on xcode simulator
+<img width="336" alt="MealsView" src="https://user-images.githubusercontent.com/73010002/194145376-70062231-8d98-4dc4-b967-17139813db4a.png">
+
+
+
+
+* Meal Detail View on xcode simulator
+<img width="381" alt="MealsDetail" src="https://user-images.githubusercontent.com/73010002/194145440-a7fa148c-b936-4dd8-98ee-cce2e875e2fa.png">
+
