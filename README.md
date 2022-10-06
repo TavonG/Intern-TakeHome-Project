@@ -9,15 +9,15 @@ This app will display meals in alphabetically order with meals sorted into their
 *Arcitecture
   - MVC 
 
-*Views
-  - TableViewController for list of categories
-  - TableViewController for meals of specific category
-  - ViewController with details of meals
-
 *Models
   - Category
   - Meals
   - MealsbyID
+
+*Views
+  - TableViewController for list of categories
+  - TableViewController for meals of specific category
+  - ViewController with details of meals
 
 *Model Controllers
  - Each model is where I make the network call to get back the data needed for each swift object
